@@ -33,20 +33,25 @@
                                     <div class="input-box">
                                         <label for="user-km">Nome & Cognome</label>
                                         <br>
-                                        <input type="text" id="user-name">
+                                        <input class="form-control" type="text" id="user-name">
                                     </div>
                                     <!-- km -->
                                     <div class="input-box">
                                         <label for="user-km">Km da percorrere</label>
                                         <br>
-                                        <input type="text" id="user-km">
+                                        <input class="form-control" type="text" id="user-km">
                                     </div>
 
                                     <!-- age -->
                                     <div class="input-box">
-                                        <label for="user-km">ETA'</label>
+                                        <label for="user-km">Fascia d'età</label>
                                         <br>
-                                        <input type="text" id="user-age">
+                                        <select class="form-select" id="user-age">
+                                            <option selected>Seleziona...</option>
+                                            <option value="Minorenne">Minorenne</option>
+                                            <option value="Maggiorenne">Maggiorenne</option>
+                                            <option value="Over 65">Over 65</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <a href="#" class="btn btn-primary mt-3" id="send-btn">Genera</a>

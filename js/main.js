@@ -11,13 +11,13 @@ const targetCodeNumber = document.getElementById("target-code-number");
 
 sendBtn.addEventListener("click", function () {
   const userKm = parseFloat(userInputKm.value);
-  const userAge = parseInt(userInputAge.value);
+  const userAge = userInputAge.value;
   const basePrice = userKm * 0.21;
   let ticketDiscount = 0;
 
-  if (userAge < 18) {
+  if (userAge == "Minorenne") {
     ticketDiscount = basePrice * 0.2;
-  } else if (userAge >= 65) {
+  } else if (userAge == "Over 65") {
     ticketDiscount = basePrice * 0.4;
   }
 
