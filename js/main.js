@@ -2,6 +2,7 @@ const userInputName = document.getElementById("user-name");
 const userInputKm = document.getElementById("user-km");
 const userInputAge = document.getElementById("user-age");
 const sendBtn = document.getElementById("send-btn");
+const cancelBtn = document.getElementById("cancel-btn");
 
 const targetPrice = document.getElementById("target-price");
 const targetName = document.getElementById("target-name");
@@ -30,5 +31,11 @@ sendBtn.addEventListener("click", function () {
 
   userInputName.value = "";
   userInputKm.value = "";
-  userInputAge.value = "";
+  userInputAge.value = "selected";
+});
+
+cancelBtn.addEventListener("click", function () {
+  userInputName.value = "";
+  userInputKm.value = "";
+  userInputAge.value = "selected";
 });
