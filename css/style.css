@@ -8,3 +8,12 @@ body {
   font-size: 3rem;
   font-weight: bold;
 }
+
+#ticket {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#ticket .col-3:first-child {
+  background-color: lightgray;
+}
