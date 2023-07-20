@@ -3,6 +3,7 @@ const userInputKm = document.getElementById("user-km");
 const userInputAge = document.getElementById("user-age");
 const sendBtn = document.getElementById("send-btn");
 const cancelBtn = document.getElementById("cancel-btn");
+const newTicketBtn = document.getElementById("new-ticket-btn");
 
 const targetPrice = document.getElementById("target-price");
 const targetName = document.getElementById("target-name");
@@ -35,6 +36,18 @@ sendBtn.addEventListener("click", function () {
 });
 
 cancelBtn.addEventListener("click", function () {
+  userInputName.value = "";
+  userInputKm.value = "";
+  userInputAge.value = "selected";
+});
+
+newTicketBtn.addEventListener("click", function () {
+  targetPrice.innerHTML = "";
+  targetName.innerHTML = "";
+  targetTicketType.innerHTML = "";
+  targetCoachNumber.innerHTML = "";
+  targetCodeNumber.innerHTML = "";
+
   userInputName.value = "";
   userInputKm.value = "";
   userInputAge.value = "selected";
