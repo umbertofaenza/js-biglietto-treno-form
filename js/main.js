@@ -1,6 +1,13 @@
-const targetParagraph = document.getElementById("target");
+const targetPrice = document.getElementById("target-price");
+
+const targetName = document.getElementById("target-name");
+
+const userInputName = document.getElementById("user-name");
+
 const userInputKm = document.getElementById("user-km");
+
 const userInputAge = document.getElementById("user-age");
+
 const sendBtn = document.getElementById("send-btn");
 
 sendBtn.addEventListener("click", function () {
@@ -16,8 +23,10 @@ sendBtn.addEventListener("click", function () {
   }
 
   const finalPrice = basePrice - ticketDiscount;
-  targetParagraph.innerHTML = "€" + finalPrice.toFixed(2);
+  targetPrice.innerHTML = "€" + finalPrice.toFixed(2);
+  targetName.innerHTML = userInputName.value;
 
+  userInputName.value = "";
   userInputKm.value = "";
   userInputAge.value = "";
 });
