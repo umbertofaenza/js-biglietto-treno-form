@@ -18,15 +18,46 @@
 </head>
 
 <body>
-    <label for="user-km">KM</label>
-    <input type="text" id="user-km">
 
-    <label for="user-km">ETA'</label>
-    <input type="text" id="user-age">
+    <main>
+        <div class="container">
+            <h2 class="main-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="inputs-wrapper d-flex justify-content-around">
+                                <!-- user name -->
+                                <div class="input-box">
+                                    <label for="user-km">Nome & Cognome</label>
+                                    <br>
+                                    <input type="text" id="user-name">
+                                </div>
+                                <!-- km -->
+                                <div class="input-box">
+                                    <label for="user-km">Km da percorrere</label>
+                                    <br>
+                                    <input type="text" id="user-km">
+                                </div>
 
-    <button id="send-btn">SEND</button>
+                                <!-- age -->
+                                <div class="input-box">
+                                    <label for="user-km">ETA'</label>
+                                    <br>
+                                    <input type="text" id="user-age">
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3" id="send-btn">Genera</a>
 
-    <p id="target"></p>
+                            <p id="target"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 </body>
 
 </html>

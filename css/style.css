@@ -1,0 +1,16 @@
+body {
+  background-color: #b91450;
+}
+
+.main-title {
+  text-align: center;
+  color: #ddd;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.box {
+  background-color: white;
+  min-height: 300px;
+  margin-top: 30px;
+}
